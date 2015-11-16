@@ -464,14 +464,14 @@ ul, li {
   background-size: cover; 
 }
 #background-carousel .item-no2 {
-  background: url(../../images/slider/slide-2.jpg) no-repeat;
+  background: url(../../images/feature-image.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #background-carousel .item-no3 {
-  background: url(../../images/slider/slide-3.jpg) no-repeat;
+  background: url(../../images/feature-image.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
