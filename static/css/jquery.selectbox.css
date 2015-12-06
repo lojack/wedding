@@ -30,7 +30,7 @@
 	text-decoration: none;
 }
 .sbToggle{
-	background: url(../../images/icon/sprite.png) 11px -48px no-repeat;
+	background: url(../images/icon/sprite.png) 11px -48px no-repeat;
 	display: block;
 	height: 44px;
 	width: 38px;
@@ -42,13 +42,13 @@
 	color: #d44646;
 }
 .sbToggle:hover{
-	background: url(../../images/icon/sprite.png) 11px -48px no-repeat;
+	background: url(../images/icon/sprite.png) 11px -48px no-repeat;
 }
 .sbToggleOpen{
-	background: url(../../images/icon/sprite.png) 11px -80px no-repeat;
+	background: url(../images/icon/sprite.png) 11px -80px no-repeat;
 }
 .sbToggleOpen:hover{
-	background: url(../../images/icon/sprite.png) 11px -80px no-repeat;
+	background: url(../images/icon/sprite.png) 11px -80px no-repeat;
 }
 .sbHolderDisabled{
 	background-color: #3C3C3C;
