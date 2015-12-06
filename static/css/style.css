@@ -189,7 +189,7 @@ ul, li {
 /*-----transparent background-----*/
 
 .color-overlay {
-	background: rgba(0,0,0,0.7); 
+	background: rgba(0,0,0,0.5); 
 	padding: 100px 0;
 }
 
@@ -817,10 +817,10 @@ ul, li {
 */
 
 .rsvpLink {
-	background: url(../images/bg/section_bg.jpg) no-repeat fixed center center;
+	background: url(../images/cats_1280.jpg) no-repeat fixed center center;
 }
 .rsvpLink .color-overlay {
-	background: rgba(0,0,0,.7);
+	background: rgba(0,0,0,.5);
 	padding: 70px 0;
 }
 .rsvpLink-title {
@@ -868,7 +868,7 @@ ul, li {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.people .row:nth-child(2) .left-content, .people .row:nth-child(2) .right-content {
+.people .row .left-content, .people .row .right-content {
 	margin-bottom: 50px;
 }
 .left-content .profile {
@@ -1185,7 +1185,7 @@ ul, li {
 */
 
 .quote {
-	background: url(../images/bg/quote_bg.jpg) no-repeat fixed center center;
+	background: url(../images/cleveland_bw_1920.jpg) no-repeat fixed center center;
 }
 .quote .color-overlay {
 	padding: 70px 0 60px;
@@ -1683,11 +1683,11 @@ ul.media-list + ul .media-object {
 */
 
 footer {
-	background: url(../images/bg/section_bg.jpg) no-repeat fixed center center;
+	background: url(../images/animals_love_1920.jpg) no-repeat fixed center center;
 	text-align: center;
 }
 footer .color-overlay {
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.5);
     padding: 70px 0;
 }
 .footer-logo {
