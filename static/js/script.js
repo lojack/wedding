@@ -19,55 +19,16 @@ $(window).load(function() {
 
 $("#sticker").sticky({topSpacing:0});
 
-//----------------------------------------------------
-//-----------Appearence of navigation-----------------
-//----------------------------------------------------
-
-  $('.nav-block .nav, footer .nav').onePageNav({
-    scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
-    scrollOffset: 72 //Height of Navigation Bar
-  });
-
-//----------------------------------------------------
-//--------------- For navigation----------------------
-//----------------------------------------------------
-
-$('.navbar-collapse ul li a').on( "click",function() {
-    $('.navbar-toggle:visible').click();
-});
 
 //----------------------------------------------------
 //--------------- SmoothSroll-------------------------
 //----------------------------------------------------
 
-var scrollAnimationTime = 1200,
-   scrollAnimation = 'easeInOutExpo';
-$('a.scrollto').bind('click.smoothscroll', function (event) {
-   event.preventDefault();
-   var target = this.hash;
-   $('html, body').stop().animate({
-       'scrollTop': $(target).offset().top
-   }, scrollAnimationTime, scrollAnimation, function () {
-       window.location.hash = target;
-   });
-});
-
 //----------------------------------------------------
 //------------Scroll to Next Section------------------
 //----------------------------------------------------
   
-  $('.next-arrow a').on( "click",function() {
-    $('html,body').animate({scrollTop:$('#story').offset().top - 76}, 750);
- return false;
-  });
-   $('a[href="#contact"]').on( "click",function() {
-    $('html,body').animate({scrollTop:$('#contact').offset().top - 76}, 750);
- return false;
-  });
-   $('a[href="#map"]').on( "click",function() {
-    $('html,body').animate({scrollTop:$('#map').offset().top - 77}, 750);
- return false;
-  });
+
 
 //----------------------------------------------------
 //--------------------Countdown-----------------------
