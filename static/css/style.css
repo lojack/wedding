@@ -1231,6 +1231,9 @@ blockquote:before {
 .contact ul {
 	padding: 0;
 }
+.contact-address ul {
+	padding: 0;
+}
 .contact-address ul li {
 	overflow: hidden;
     margin-bottom: 25px;

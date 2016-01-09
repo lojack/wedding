@@ -83,13 +83,12 @@ Index
 }
 .thumb-img-content {
 	position:relative;
-	border-radius: 15px 15px 0 0;
+	border-radius: 20px;
 	margin-bottom: 2px;
 	height: auto;
 	overflow: hidden;
 }
 .thumb-img-content img {
-	border-radius: 20px 20px 0 0;
 	width: 100%;
 }
 
@@ -193,7 +192,7 @@ Index
 	margin-bottom: 2px;
 }
 .people-thumb-img img {
-	border-radius: 20px 20px 0 0;
+	border-radius: 20px;
 	width: 100%;
 }
 .people .social-icon {
