@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block body %}
+	<!-- contact start --> 
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading wow animated fadeInUp">
+						<h3>RSVP</h3>
+						<p>In order to RSVP please enter the code on your invitation.</p>
+					</div>
+					<!-- /.heading end -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3 divider">
+				</div>
+				<div class="col-sm-offset-2 col-sm-8">
+					<div class="rsvp-block">
+						<form class="contact_form" role="form" action="/rsvp/test">
+							<div class="row">
+								<div class="col-sm-7">
+									<div class="form-group">
+										<input type="text" class="form-control" id="code" name="code" placeholder="Your code..." required="required">
+									</div>
+								</div>
+								<div class="col-sm-5">
+									<div class="form-group">
+										<input type="submit" name="submit" class="btn default-btn btn-block" value="Submit">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<p class="contact-success">Your Message has been Successfully Sent!</p>
+									<p class="contact-error">Error! Something went wrong!</p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- /.contact-block end -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- contact end -->
+{% endblock %}
