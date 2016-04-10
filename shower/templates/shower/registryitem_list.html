@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block body %}
+<div class="container">
+  <div class="col-xs-12">
+    <h1 class="text-center">Honeymoon Shower</h1>
+    <div class="list-group">
+      {% for object in object_list %}
+      <div class="list-group-item{% if object.picked %} disabled{% endif %}">
+        <div class="registry-item">
+          {% if object.thumbnail %}
+          <div class="preview-image">
+            <img src="{{ object.thumbnail.url }}" />
+          </div>
+          {% endif %}
+          <div class="body">
+            <h4 class="list-group-item-heading">{{ object.title }}</h4>
+            {% if object.description %}
+            <p class="list-group-item-text">{{ object.description }}</p>
+            {% endif %}
+          </div>
+          <div class="actions">
+            <a href="{{ object.link }}" class="btn btn-default">View Details</a>
+            <form method="post" action="{% url "mark-purchased" pk=object.id %}">
+              {% csrf_token %}
+              <input type="submit" class="btn btn-default" value="Mark as Claimed" />
+            </form>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
