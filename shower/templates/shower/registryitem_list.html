@@ -3,7 +3,7 @@
 {% block body %}
 <div class="container">
   <div class="col-xs-12">
-    <h1 class="text-center">Honeymoon Shower</h1>
+    <h1 class="text-center">Honeymoon Registry</h1>
     <div class="list-group">
       {% for object in object_list %}
       <div class="list-group-item{% if object.picked %} disabled{% endif %}">
@@ -23,7 +23,11 @@
             <a href="{{ object.link }}" class="btn btn-default">View Details</a>
             <form method="post" action="{% url "mark-purchased" pk=object.id %}">
               {% csrf_token %}
+              {% if object.picked %}
+              <input type="submit" class="btn btn-default" value="Mark as Unclaimed" />
+              {% else %}
               <input type="submit" class="btn btn-default" value="Mark as Claimed" />
+              {% endif %}
             </form>
           </div>
         </div>

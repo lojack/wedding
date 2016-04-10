@@ -15,7 +15,7 @@ class RegistryItemCompletedView(SingleObjectMixin, View):
 
   def post(self, request, *args, **kwargs):
     self.object = self.get_object()
-    self.object.picked = True
+    self.object.picked = not(self.object.picked)
     self.object.save()
 
     return HttpResponseRedirect(reverse('registry'))
