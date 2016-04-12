@@ -10,4 +10,7 @@ class RegistryItem(models.Model):
   link = models.CharField(max_length=255, blank=True)
   thumbnail = models.ImageField(upload_to="registry_items", blank=True)
 
+  def __unicode__(self):
+    return self.title
+
 admin.site.register(RegistryItem)
