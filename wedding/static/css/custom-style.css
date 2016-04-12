@@ -261,11 +261,16 @@ Index
 
 .registry-item {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.registry-item .actions, .preview-image, .body {
+  margin: 10px 0;
 }
 .registry-item .actions, .registry-item .preview-image {
   flex-grow: 0;
-  align-self: center;
+}
+.registry-item .actions {
+  white-space: nowrap;
 }
 .registry-item .body {
   flex-grow: 1;
@@ -277,4 +282,14 @@ Index
 }
 .registry-item form {
   display: inline;
+}
+
+@media (min-width: 768px) {
+  .registry-item {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .registry-item .actions, .registry-item .preview-image {
+    align-self: center;
+  }
 }
