@@ -293,3 +293,8 @@ Index
     align-self: center;
   }
 }
+
+.registry-info {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
